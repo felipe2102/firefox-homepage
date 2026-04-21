@@ -1,0 +1,93 @@
+.papers-container, .links-container {
+    position: absolute;
+    z-index: 1001;
+    height: 100%;
+    width: 10em;
+    background-color: rgba(231, 95, 197,0.7);
+    display: flex;
+    padding: 1em;
+    transition: transform 0.3s ease;
+}
+.papers-container {
+    right: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1em;
+    transform: translateX(100%);
+}
+.links-container {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+
+.img-container {
+    width: 100%;
+    background-color: white;
+    height: 100%;
+}
+
+.trigger {
+    position: absolute;
+    z-index: 9999;
+    height: 100%;
+    width: 5em;
+    border: 5px cyan solid;
+}
+
+.trigger.left {
+    left: 0;
+}
+
+.trigger.right {
+    right: 0;
+}
+
+.trigger.right:hover ~.papers-container, .papers-container:hover {
+    transform: translateX(0);
+}
+
+.trigger.left:hover ~.links-container, .links-container:hover {
+    transform: translateX(0);
+}
+
+.transparency-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    inset: 0;
+    z-index: 1002;
+    background-color: rgba(32, 178, 170,0.5);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    pointer-events: none;
+}
+
+.transparency-container .top {
+    background-color: rgba(0, 0, 0, 0.67);
+    width: 100%;
+    height: 5em;
+}
+
+.transparency-container .bottom {
+    background-color: rgba(0, 0, 0, 0.67);
+    width: 100%;
+    height: 5em;
+}
+
+.link-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0;
+    width: 100%;
+}
+
+.link-block {
+    width: 100%;
+    padding: 0.2em;
+    background-color: white;
+    color: black;
+}
