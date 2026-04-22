@@ -1,0 +1,34 @@
+.notes-container {
+    inset: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1020;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    border-right: var(--menu-border);
+    padding: 0.5rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.notes-container, .notes-container .text-area {
+    background: rgba(0, 0, 0, 0.226);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.text-area {
+    width: 100%;
+    height: 100%;
+    color: rgb(230, 224, 224);
+    font-size: 1.5rem;
+}
+
+.text-area{
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+    
