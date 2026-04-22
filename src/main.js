@@ -46,39 +46,47 @@ function main() {
     const url13 = "https://c.l3n.co/cVfVTk.jpg";
     const url14 = "https://b.l3n.co/cVf97x.jpg";
     const url15 = "https://a.l3n.co/cVfdUH.jpg";
-    const url16 = "https://d.l3n.co/cVfBZ1.jpg";
 
     const urls = [
-url1,
-url2,
-url3,
-url4,
-url5,
-url6,
-url7,
-url8,
-url9,
-url10,
-url11,
-url12,
-url13,
-url14,
-url15,
-url16,
-    ]
-    let current = Math.floor(Math.random() * (urls.length - 0 + 1)) + 0;
+        url1,
+        url2,
+        url3,
+        url4,
+        url5,
+        url6,
+        url7,
+        url8,
+        url9,
+        url10,
+        url11,
+        url12,
+        url13,
+        url14,
+        url15,
+    ];
+    const LIST_has_floor = [false,false,true,false,true,true,false,false,true,true,true,true,true,true,true];
+    let current = Math.floor(Math.random() * urls.length);
     document.addEventListener("DOMContentLoaded", () => {
+        if (LIST_has_floor[current] === true) {
+            document.getElementById("i_floor_rain").style.visibility = "visible";
+        } else {
+            document.getElementById("i_floor_rain").style.visibility = "hidden";
+        }
         change_paper(urls[current])
         setInterval(() => {
-            const rand = Math.floor(Math.random() * (urls.length - 0 + 1)) + 0;
-            if (rand != current) {
-                change_paper(urls[rand]);
-                current = rand;
-                return;
+            let rand;
+            do {
+                rand = Math.floor(Math.random() * urls.length);
+            } while (rand === current);
+            change_paper(urls[rand]);
+            if (LIST_has_floor[rand] === true) {
+                document.getElementById("i_floor_rain").style.visibility = "visible";
             } else {
-                rand = Math.floor(Math.random() * (urls.length - 0 + 1)) + 0;
+                document.getElementById("i_floor_rain").style.visibility = "hidden";
             }
-        }, 10000);
+            current = rand;
+        }
+        , 5000);
     });
 }
 
