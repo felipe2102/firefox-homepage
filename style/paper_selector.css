@@ -1,9 +1,15 @@
+:root{
+    --menu-color: rgba(53, 44, 66, 0.7);
+    --menu-border-color: rgba(94, 50, 119, 0.7);
+    --menu-border: 0.3em solid var(--menu-border-color);
+}
+
 .papers-container, .links-container {
     position: absolute;
     z-index: 1001;
     height: 100%;
     width: 10em;
-    background-color: rgba(231, 95, 197,0.7);
+    background-color: var(--menu-color);
     display: flex;
     padding: 1em;
     transition: transform 0.3s ease;
@@ -14,25 +20,41 @@
     justify-content: space-evenly;
     gap: 1em;
     transform: translateX(100%);
+    border-left: var(--menu-border);
 }
+
+.papers-container a {
+    height: 100%;
+    width: 100%;
+}
+
+.papers-container a img {
+    width: 100%;
+    height: 100%;
+}
+
 .links-container {
     left: 0;
     transform: translateX(-100%);
+    border-right: var(--menu-border);
 }
 
 
 .img-container {
     width: 100%;
-    background-color: white;
     height: 100%;
+    border: var(--menu-border)
 }
 
 .trigger {
     position: absolute;
-    z-index: 9999;
+    z-index: 1002;
     height: 100%;
     width: 5em;
-    border: 5px cyan solid;
+}
+
+.trigger:hover {
+    z-index: 1000;
 }
 
 .trigger.left {
@@ -58,7 +80,6 @@
     justify-content: space-between;
     inset: 0;
     z-index: 1002;
-    background-color: rgba(32, 178, 170,0.5);
     height: 100%;
     width: 100%;
     margin: 0;
@@ -90,4 +111,14 @@
     padding: 0.2em;
     background-color: white;
     color: black;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+}
+
+.main:has(.links-container:hover) .trigger.left {
+    z-index: 0;
+}
+
+.main:has(.papers-container:hover) .trigger.right {
+    z-index: 0;
 }

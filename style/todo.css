@@ -1,0 +1,41 @@
+.TODO-container {
+    visibility: hidden;
+    position: absolute;
+    right:3em;
+    z-index: 1000;
+    margin-top: 1em;
+    background-color: var(--menu-color);
+    border: var(--menu-border);
+    border-radius: 1.3em;
+    padding: 0.5em;
+    max-width: 15em;
+}
+.TODO-container ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.TODO-container h1 {
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.TODO-container li {
+    color: white;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 8px;
+    font-family: "Orbitron",sans-serif;
+    font-weight: 400;
+}

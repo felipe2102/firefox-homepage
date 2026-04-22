@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/paper_selector.css">
+    <link rel="stylesheet" href="/style/links.css">
+    <link rel="stylesheet" href="./style/todo.css">
+    <script src="./src/main.js"></script>
     <title>Tridactyl Page</title>
 </head>
 
 <body>
-    <main class="main">
+    <main class="main" id="i_main">
+        <div class="main bg" id="i_bg1"></div>
+        <div class="main bg" id="i_bg2"></div>
+        <div class="rain-overlay rain1"></div>
+        <div class="rain-overlay rain2"></div>
+        <div class="rain-overlay rain3"></div>
         <div class="nav-container">
             <nav>
                 <img class="google-img" src="https://media.discordapp.net/attachments/1489749604869210237/1496054086490128486/Logo-Google-G.png?ex=69e87c71&is=69e72af1&hm=44a92e6de76e027580f1134ad09261f68d61410ffc9fe0917e89617a2859f0ff&=&format=webp&quality=lossless&width=656&height=656" alt="google icon">
@@ -21,49 +29,69 @@
         </div>
         <div class="trigger left"></div>
         <div class="trigger right"></div>
+        <div class="TODO-container">
+            <h1>TODO LIST</h1>
+            <hr>
+            <ul type="none">
+                <li>
+                    <input type="checkbox" name="1" id="todo_1" class="TODO-check">  
+                    Terminar ficha RPG
+                </li><li>
+                    <input type="checkbox" name="1" id="todo_1" class="TODO-check">  
+                    Terminarficha RPG
+                </li><li>
+                    <input type="checkbox" name="1" id="todo_1" class="TODO-check">  
+                    Terminar ficha RPG
+                </li><li>
+                    <input type="checkbox" name="1" id="todo_1" class="TODO-check">  
+                    Terminar ficha RPG
+                </li><li>
+                    <input type="checkbox" name="1" id="todo_1" class="TODO-check">  
+                    Terminar ficha RPG
+                </li>
+            </ul>
+        </div>
         <div class="papers-container">
             <div class="transparency-container">
                 <div class="transparency top"></div>
                 <div class="transparency bottom"></div>
             </div>
             <div class="img-container">
-                <img src="" alt="wallpaper">
+                <a href="https://google.com">
+                    <img src="https://c.l3n.co/cQa7XM.jpg" alt="wallpaper2">
+                </a>
             </div>
             <div class="img-container">
-                <img src="" alt="wallpaper">
+                <a href="https://google.com">
+                    <img src="https://a.l3n.co/cQan9x.png" alt="wallpaper2">
+                </a>
             </div>
             <div class="img-container">
-                <img src="" alt="wallpaper">
+                <a href="https://google.com">
+                    <img src="https://c.l3n.co/cQa7XM.jpg" alt="wallpaper2">
+                </a>
             </div>
             <div class="img-container">
-                <img src="" alt="wallpaper">
+                <a href="https://google.com">
+                    <img src="https://b.l3n.co/cQaeik.png" alt="wallpaper2">
+                </a>
             </div>
         </div>
         <div class="links-container">
-            <ul type="none" class="link-list">
+            <ul type="none" class="link-list" id="i_link-list">
                 <li class="link-block">
-                    <a href="" class="link">
-                        <img src="" alt="link1">
+                    <a href="https://mail.google.com/mail/u/0/" class="link">
+                        📧 Gmail
                     </a>
                 </li>
                 <li class="link-block">
-                    <a href="" class="link">
-                        <img src="" alt="link2">
+                    <a href="https://uvv.br" class="link">
+                        UVV
                     </a>
                 </li>
                 <li class="link-block">
-                    <a href="" class="link">
-                        <img src="" alt="link3">
-                    </a>
-                </li>
-                <li class="link-block">
-                    <a href="" class="link">
-                        <img src="" alt="link4">
-                    </a>
-                </li>
-                <li class="link-block">
-                    <a href="" class="link">
-                        <img src="" alt="link5">
+                    <a href="https://youtube.com" class="link">
+                        📺 Youtube
                     </a>
                 </li>
             </ul>
