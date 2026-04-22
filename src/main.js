@@ -66,9 +66,9 @@ url14,
 url15,
 url16,
     ]
-    let current = 0;
+    let current = Math.floor(Math.random() * (urls.length - 0 + 1)) + 0;
     document.addEventListener("DOMContentLoaded", () => {
-        change_paper(urls[0])
+        change_paper(urls[current])
         setInterval(() => {
             const rand = Math.floor(Math.random() * (urls.length - 0 + 1)) + 0;
             if (rand != current) {
