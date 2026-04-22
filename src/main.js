@@ -1,4 +1,4 @@
-let ativo = 1;
+let ativo = 0;
 function change_paper(url){
     const bg1 = document.getElementById("i_bg1")
     const bg2 = document.getElementById("i_bg2");

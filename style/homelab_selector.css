@@ -126,3 +126,24 @@
 .main:has(.papers-container:hover) .trigger.right {
     z-index: 0;
 }
+
+.services-container {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.services-container a {
+  display: block;
+  padding: 0.7em;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.services-container a:hover {
+  background: rgba(215, 148, 221, 0.363);
+  box-shadow: 0 0 15px rgb(236, 102, 207);
+}
