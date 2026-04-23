@@ -1,10 +1,9 @@
-.papers-container {
+.services-container {
     right: 0;
     transform: translateX(100%);
 }
 
-.papers-container a img,
-.services-container{
+.services-container a img {
     height: 100%;
     width: 100%;
 }

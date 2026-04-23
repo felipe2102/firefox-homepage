@@ -117,7 +117,7 @@ form {
     outline: none;
 }
 
-.papers-container,
+.services-container,
 .links-container {
     position: absolute;
     z-index: 1001;
@@ -150,8 +150,8 @@ form {
     right: 0;
 }
 
-.trigger.right:hover~.papers-container,
-.papers-container:hover {
+.trigger.right:hover~.services-container,
+.services-container:hover {
     transform: translateX(0);
 }
 
@@ -164,6 +164,6 @@ form {
     z-index: 0;
 }
 
-.main:has(.papers-container:hover) .trigger.right {
+.main:has(.services-container:hover) .trigger.right {
     z-index: 0;
 }
