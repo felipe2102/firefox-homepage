@@ -17,19 +17,6 @@ function change_paper(url){
     console.log("changed paper!")
 }
 
-function add_shortcut(name,url){
-    ul = document.getElementById("i_link-list")
-    link = ` <li class="link-block">
-                    <a href="${url}" class="link">
-                        ${name}
-                    </a>
-                </li>
-            `
-    temp = document.createElement("div")
-    temp.innerHTML = link
-    ul.appendChild(temp.firstElementChild)
-}
-
 function main() {
     const url1 = "https://c.l3n.co/cQa7XM.jpg";
     const url2 = "https://b.l3n.co/cQaYkc.jpg";
@@ -64,14 +51,8 @@ function main() {
         url14,
         url15,
     ];
-    const LIST_has_floor = [false,false,true,false,true,true,false,false,true,true,true,true,true,true,true];
     let current = Math.floor(Math.random() * urls.length);
     document.addEventListener("DOMContentLoaded", () => {
-        if (LIST_has_floor[current] === true) {
-            document.getElementById("i_floor_rain").style.visibility = "visible";
-        } else {
-            document.getElementById("i_floor_rain").style.visibility = "hidden";
-        }
         change_paper(urls[current])
         setInterval(() => {
             let rand;
@@ -79,11 +60,6 @@ function main() {
                 rand = Math.floor(Math.random() * urls.length);
             } while (rand === current);
             change_paper(urls[rand]);
-            if (LIST_has_floor[rand] === true) {
-                document.getElementById("i_floor_rain").style.visibility = "visible";
-            } else {
-                document.getElementById("i_floor_rain").style.visibility = "hidden";
-            }
             current = rand;
         }
         , 5000);
