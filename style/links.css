@@ -36,3 +36,7 @@
   background: rgba(215, 148, 221, 0.363);
   box-shadow: 0 0 15px rgb(236, 102, 207);
 }
+
+.link-block img {
+  height: 70px;
+}
