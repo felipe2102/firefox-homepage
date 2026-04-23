@@ -112,7 +112,8 @@
 .services-container {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  border-radius: 8px;
+  height: fit-content;
 }
 
 .services-container a {
