@@ -1,7 +1,25 @@
+.links-container {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0;
+  width: 100%;
+}
+
 .link-block {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
+  width: 100%;
+  padding: 0.2em;
+  color: black;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
 }
 
 .link-block a {

@@ -1,21 +1,9 @@
-:root{
+:root {
     --menu-color: rgba(53, 44, 66, 0.7);
     --menu-border-color: rgba(94, 50, 119, 0.7);
     --menu-border: 0.3em solid var(--menu-border-color);
 }
 
-.papers-container, .links-container {
-    position: absolute;
-    z-index: 1001;
-    height: 100%;
-    width: 10em;
-    background: rgba(25, 20, 30, 0.137);
-    backdrop-filter:blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    display: flex;
-    padding: 1em;
-    transition: transform 0.3s ease;
-}
 .papers-container {
     right: 0;
     flex-direction: column;
@@ -34,99 +22,31 @@
     height: 100%;
 }
 
-.links-container {
-    left: 0;
-    transform: translateX(-100%);
-}
-
 .services-container {
     width: 100%;
     height: 100%;
 }
 
-.trigger {
-    position: absolute;
-    z-index: 1002;
-    height: 100%;
-    width: 5em;
-}
-
-.trigger:hover {
-    z-index: 1000;
-}
-
-.trigger.left {
-    left: 0;
-}
-
-.trigger.right {
-    right: 0;
-}
-
-.trigger.right:hover ~.papers-container, .papers-container:hover {
-    transform: translateX(0);
-}
-
-.trigger.left:hover ~.links-container, .links-container:hover {
-    transform: translateX(0);
-}
-
-.transparency-container {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    justify-content: space-between;
-    inset: 0;
-    z-index: 1002;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    pointer-events: none;
-}
-
-.link-list{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 0;
-    width: 100%;
-}
-
-.link-block {
-    width: 100%;
-    padding: 0.2em;
-    background-color: white;
-    color: black;
+.services-container {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    height: fit-content;
     font-family: "Orbitron", sans-serif;
     font-weight: 600;
 }
 
-.main:has(.links-container:hover) .trigger.left {
-    z-index: 0;
-}
-
-.main:has(.papers-container:hover) .trigger.right {
-    z-index: 0;
-}
-
-.services-container {
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  height: fit-content;
-}
-
 .services-container a {
-  display: block;
-  padding: 0.7em;
-  text-align: center;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  transition: 0.2s;
+    display: block;
+    padding: 0.7em;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
 }
 
 .services-container a:hover {
-  background: rgba(215, 148, 221, 0.363);
-  box-shadow: 0 0 15px rgb(236, 102, 207);
+    background: rgba(215, 148, 221, 0.363);
+    box-shadow: 0 0 15px rgb(236, 102, 207);
 }

@@ -3,6 +3,7 @@
 *::after {
     box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
@@ -21,7 +22,7 @@ main {
 .bg {
     height: 100%;
     width: 100%;
-    background-size:cover;
+    background-size: cover;
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,10 +30,16 @@ main {
     transition: opacity 1s ease, transform 5s ease;
 }
 
-#i_bg1 {z-index: -2;}
-#i_bg2 {z-index: -1; opacity: 0;}
+#i_bg1 {
+    z-index: -2;
+}
 
-.rain-overlay{
+#i_bg2 {
+    z-index: -1;
+    opacity: 0;
+}
+
+.rain-overlay {
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -40,19 +47,23 @@ main {
     mix-blend-mode: screen;
     opacity: 1;
 }
+
 .rain1 {
     background-image: url("https://d.l3n.co/cVPc2P.gif");
     opacity: 1;
 }
-.rain2{
+
+.rain2 {
     background-image: url("https://a.l3n.co/cVcKVA.gif");
     opacity: 0.5;
 }
+
 .rain3 {
     background-image: url("https://d.l3n.co/cVcpnM.gif");
     background-size: cover;
     opacity: 0.7;
 }
+
 .nav-container {
     height: 100%;
     width: 100%;
@@ -63,6 +74,7 @@ main {
     justify-content: center;
 
 }
+
 nav {
     background-color: rgba(255, 255, 255, 0.5);
     width: 50%;
@@ -103,4 +115,55 @@ form {
     background-color: rgba(255, 255, 255, 0.1);
     border: 0px;
     outline: none;
+}
+
+.papers-container,
+.links-container {
+    position: absolute;
+    z-index: 1001;
+    height: 100%;
+    width: 10em;
+    background: rgba(25, 20, 30, 0.137);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: flex;
+    padding: 1em;
+    transition: transform 0.3s ease;
+}
+
+.trigger {
+    position: absolute;
+    z-index: 1002;
+    height: 100%;
+    width: 5em;
+}
+
+.trigger:hover {
+    z-index: 1000;
+}
+
+.trigger.left {
+    left: 0;
+}
+
+.trigger.right {
+    right: 0;
+}
+
+.trigger.right:hover~.papers-container,
+.papers-container:hover {
+    transform: translateX(0);
+}
+
+.trigger.left:hover~.links-container,
+.links-container:hover {
+    transform: translateX(0);
+}
+
+.main:has(.links-container:hover) .trigger.left {
+    z-index: 0;
+}
+
+.main:has(.papers-container:hover) .trigger.right {
+    z-index: 0;
 }
