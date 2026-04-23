@@ -52,18 +52,7 @@ function main() {
         url15,
     ];
     let current = Math.floor(Math.random() * urls.length);
-    document.addEventListener("DOMContentLoaded", () => {
-        change_paper(urls[current])
-        setInterval(() => {
-            let rand;
-            do {
-                rand = Math.floor(Math.random() * urls.length);
-            } while (rand === current);
-            change_paper(urls[rand]);
-            current = rand;
-        }
-        , 5000);
-    });
+    document.addEventListener("DOMContentLoaded", () => {change_paper(urls[current])});
 }
 
 main();
