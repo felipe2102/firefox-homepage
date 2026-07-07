@@ -18,21 +18,21 @@ function change_paper(url){
 }
 
 function main() {
-    const url1 = "https://c.l3n.co/cQa7XM.jpg";
-    const url2 = "https://b.l3n.co/cQaYkc.jpg";
-    const url3 = "https://a.l3n.co/cQan9x.png";
-    const url4 = "https://b.l3n.co/cQaeik.png";
-    const url5 = "https://c.l3n.co/cQaLa1.png";
-    const url6 = "https://d.l3n.co/cVPSYM.jpg";
-    const url7 = "https://c.l3n.co/cVPl0q.jpg";
-    const url8 = "https://b.l3n.co/cVPOfD.jpg";
-    const url9 = "https://d.l3n.co/cVPvCa.jpg";
-    const url10 = "https://c.l3n.co/cVP7p0.jpg";
-    const url11 = "https://c.l3n.co/cVPMxk.jpg";
-    const url12 = "https://d.l3n.co/cVPupH.jpg";
-    const url13 = "https://c.l3n.co/cVfVTk.jpg";
-    const url14 = "https://b.l3n.co/cVf97x.jpg";
-    const url15 = "https://a.l3n.co/cVfdUH.jpg";
+    const url1 = "../resources/wallpapers/01.jpg";
+    const url2 = "../resources/wallpapers/02.jpg";
+    const url3 = "../resources/wallpapers/03.jpg";
+    const url4 = "../resources/wallpapers/04.jpg";
+    const url5 = "../resources/wallpapers/05.png";
+    const url6 = "../resources/wallpapers/06.png";
+    const url7 = "../resources/wallpapers/07.jpeg";
+    const url8 = "../resources/wallpapers/08.jpg";
+    const url9 = "../resources/wallpapers/09.jpg";
+    const url10 = "../resources/wallpapers/10.jpg";
+    const url11 = "../resources/wallpapers/11.jpg";
+    const url12 = "../resources/wallpapers/12.jpg";
+    const url13 = "../resources/wallpapers/13.jpg";
+    const url14 = "../resources/wallpapers/14.jpg";
+    const url15 = "../resources/wallpapers/15.png";
 
     const urls = [
         url1,
