@@ -17,6 +17,46 @@ function change_paper(url){
     console.log("changed paper!")
 }
 
+function get_weather() {
+    const weatherCodes = {
+        0: "Céu limpo",
+
+        1: "Poucas nuvens",
+        2: "Parcialmente nublado",
+        3: "Nublado",
+
+        45: "Neblina",
+        48: "Neblina",
+
+        51: "Garoa",
+        53: "Garoa",
+        55: "Garoa intensa",
+
+        61: "Chuva fraca",
+        63: "Chuva moderada",
+        65: "Chuva forte",
+
+        80: "Pancadas de chuva",
+        81: "Pancadas de chuva",
+        82: "Chuva intensa",
+
+        95: "Tempestade",
+        96: "Tempestade com granizo",
+        99: "Tempestade forte"
+    };
+
+    fetch("https://api.open-meteo.com/v1/forecast?latitude=-20.3297&longitude=-40.2925&current=temperature_2m,weather_code&timezone=America%2FSao_Paulo&forecast_days=1")
+        .then(response => response.json())
+        .then(data => {
+            console.log(Math.round(data.current.temperature_2m));
+            console.log(data.current.weather_code);
+
+            document.getElementById("temperature").innerHTML = Math.round(data.current.temperature_2m) + "°C";
+
+            document.getElementById("condition").innerHTML = weatherCodes[data.current.weather_code];
+        });
+}
+
 function main() {
     const url1 = "../resources/wallpapers/01.jpg";
     const url2 = "../resources/wallpapers/02.jpg";
@@ -53,6 +93,7 @@ function main() {
     ];
     let current = Math.floor(Math.random() * urls.length);
     document.addEventListener("DOMContentLoaded", () => {change_paper(urls[current])});
+    get_weather();
 }
 
 main();

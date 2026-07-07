@@ -113,17 +113,17 @@ form {
     flex-direction: column;
 }
 
-.temperature {
+#temperature {
     font-size: 2.5em;
     font-weight: 600;
 }
 
-.condition {
+#condition {
     font-size: 0.9em;
     opacity: 0.8;
 }
 
-.location {
+#location {
     font-size: 0.75em;
     opacity: 0.6;
 }
