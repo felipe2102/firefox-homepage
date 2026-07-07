@@ -82,6 +82,52 @@ form {
     outline: none;
 }
 
+.weather-widget {
+    position: absolute;
+    z-index: 1003;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    background: rgba(25, 20, 30, 0.137);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.weather-widget img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.condition {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.location {
+    font-size: 0.75em;
+    opacity: 0.6;
+}
+
 .services-container,
 .links-container {
     position: absolute;
