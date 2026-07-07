@@ -30,29 +30,19 @@ main {
     transition: opacity 1s ease, transform 5s ease;
 }
 
-#i_bg1 {
-    z-index: -2;
-}
-
-#i_bg2 {
-    z-index: -1;
-    opacity: 0;
-}
-
 .nav-container {
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 1000;
     display: flex;
-    align-items: center;
     justify-content: center;
-
+    margin-top: 260px;
 }
 
 nav {
     background-color: rgba(255, 255, 255, 0.5);
-    width: 50%;
+    width: 40%;
     height: 3em;
     padding-right: 0.5em;
     display: flex;
