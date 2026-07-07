@@ -41,7 +41,9 @@ main {
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.5);
+    background: rgba(25, 20, 30, 0.237);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     width: 40%;
     height: 3em;
     padding-right: 0.5em;
@@ -49,6 +51,10 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 3em;
+}
+
+nav:focus-within {
+    background: rgba(25, 20, 30, 0.437);
 }
 
 .google-img {
@@ -69,18 +75,11 @@ form {
     height: 100%;
     font-size: 1.5em;
     margin-right: 0.5em;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 0px;
-}
-
-.text-input:focus {
-    width: 100%;
-    height: 100%;
-    margin-right: 0.5em;
-    background-color: rgba(255, 255, 255, 0.1);
+    background: transparent;
     border: 0px;
     outline: none;
 }
+
 
 .weather-widget {
     position: absolute;

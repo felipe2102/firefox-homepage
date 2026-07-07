@@ -48,7 +48,7 @@ function get_weather() {
     fetch("https://api.open-meteo.com/v1/forecast?latitude=-20.3297&longitude=-40.2925&current=temperature_2m,weather_code&timezone=America%2FSao_Paulo&forecast_days=1")
         .then(response => response.json())
         .then(data => {
-            console.log(Math.round(data.current.temperature_2m));
+            console.log(data.current.temperature_2m);
             console.log(data.current.weather_code);
 
             document.getElementById("temperature").innerHTML = Math.round(data.current.temperature_2m) + "°C";
