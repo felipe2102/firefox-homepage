@@ -58,10 +58,10 @@ function get_weather() {
 }
 
 function main() {
-    const url1 = "../resources/wallpapers/01.jpg";
-    const url2 = "../resources/wallpapers/02.jpg";
-    const url3 = "../resources/wallpapers/03.jpg";
-    const url4 = "../resources/wallpapers/04.jpg";
+    const url1 = "/resources/wallpapers/01.jpg";
+    const url2 = "/resources/wallpapers/02.jpg";
+    const url3 = "/resources/wallpapers/03.jpg";
+    const url4 = "/resources/wallpapers/04.jpg";
     const url5 = "../resources/wallpapers/05.png";
     const url6 = "../resources/wallpapers/06.png";
     const url7 = "../resources/wallpapers/07.jpeg";
