@@ -58,21 +58,21 @@ function get_weather() {
 }
 
 function main() {
-    const url1 = "https://feliperb.dev.br/resources/wallpapers/01.jpg";
-    const url2 = "https://feliperb.dev.br/resources/wallpapers/02.jpg";
-    const url3 = "https://feliperb.dev.br/resources/wallpapers/03.jpg";
-    const url4 = "https://feliperb.dev.br/resources/wallpapers/04.jpg";
-    const url5 = "https://feliperb.dev.br/resources/wallpapers/05.png";
-    const url6 = "https://feliperb.dev.br/resources/wallpapers/06.png";
-    const url7 = "https://feliperb.dev.br/resources/wallpapers/07.jpeg";
-    const url8 = "https://feliperb.dev.br/resources/wallpapers/08.jpg";
-    const url9 = "https://feliperb.dev.br/resources/wallpapers/09.jpg";
-    const url10 = "https://feliperb.dev.br/resources/wallpapers/10.jpg";
-    const url11 = "https://feliperb.dev.br/resources/wallpapers/11.jpg";
-    const url12 = "https://feliperb.dev.br/resources/wallpapers/12.jpg";
-    const url13 = "https://feliperb.dev.br/resources/wallpapers/13.jpg";
-    const url14 = "https://feliperb.dev.br/resources/wallpapers/14.jpg";
-    const url15 = "https://feliperb.dev.br/resources/wallpapers/15.png";
+    const url1 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/01.jpg";
+    const url2 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/02.jpg";
+    const url3 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/03.jpg";
+    const url4 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/04.jpg";
+    const url5 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/05.png";
+    const url6 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/06.png";
+    const url7 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/07.jpeg";
+    const url8 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/08.jpg";
+    const url9 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/09.jpg";
+    const url10 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/10.jpg";
+    const url11 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/11.jpg";
+    const url12 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/12.jpg";
+    const url13 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/13.jpg";
+    const url14 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/14.jpg";
+    const url15 = "https://feliperb.dev.br/firefox-homepage/resources/wallpapers/15.png";
 
     const urls = [
         url1,
